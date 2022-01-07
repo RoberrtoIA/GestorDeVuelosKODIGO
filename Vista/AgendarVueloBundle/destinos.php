@@ -19,7 +19,7 @@
     <div class="container menu">
         <center><h1 id="titulo">Seleccionar Destino!</h1></center>
         <div class="contenido">
-        <table class="table" style="display: block; height: 60vh; overflow: auto; ">
+        <table class="table">
             <thead>
                 <tr>
                     <th scope="col">#</th>
