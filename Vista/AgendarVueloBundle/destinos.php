@@ -19,7 +19,7 @@
     <div class="container menu">
         <center><h1 id="titulo">Seleccionar Destino!</h1></center>
         <div class="contenido">
-        <table class="table">
+        <table class="table table-hover">
             <thead>
                 <tr>
                     <th scope="col">#</th>
