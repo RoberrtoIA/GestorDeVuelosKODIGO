@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,700&display=swap');
+
+
+html {
+    overflow: scroll;
+    overflow-y: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.fondo {
+    background-image: url('../img/fondo7.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+  }
+
+  .menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    /* opacity: 0.5; */
+    background-color: rgba(240, 248, 255, 0.5);
+    border-radius: 50px 50px 50px 50px;
+    z-index: 2;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 90vh;
+  }
+
+  .contenido {
+      margin-right: 10%;
+      margin-left: 10%;
+      margin-bottom: 5%;
+      margin-top: 5%;
+  }
+
+  #titulo {
+      margin: 2%;
+  }
+
+  .boton {
+    width: 10vh;
+  }
+
+  .ciudad {
+      width: 45vh;
+      text-align: center;
+  }
+
+  .vuelo {
+      width: 45vh;
+      text-align: center;
+  }
+
+  .numero {
+      width: 3vh;
+  }

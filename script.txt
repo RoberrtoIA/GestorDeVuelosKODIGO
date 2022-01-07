@@ -1,0 +1,96 @@
+CREATE TABLE IF NOT EXISTS `areonave` (
+  `idAreonave` int(11) NOT NULL AUTO_INCREMENT,
+  `Modelo` varchar(100) DEFAULT NULL,
+  `Capacidad_pasajeros` int(11) DEFAULT NULL,
+  `Rango_combustible_lleno` int(11) DEFAULT NULL,
+  `Aerolinea` varchar(100) DEFAULT NULL,
+  `vuelo` varchar(10) DEFAULT NULL,
+  `categoria` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`idAreonave`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `vuelos` (
+  `idVuelos` int(11) NOT NULL AUTO_INCREMENT,
+  `PaisCiudad_origen` varchar(250) DEFAULT NULL,
+  `PaisCiudad_destino` varchar(250) DEFAULT NULL,
+  `FechaHora_salida` datetime DEFAULT NULL,
+  `FechaHora_llegada` datetime DEFAULT NULL,
+  `Tiempo_retraso` datetime DEFAULT NULL,
+  `Areonave_idAreonave` int(11) NOT NULL,
+  PRIMARY KEY (`idVuelos`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE destinos (
+	destinosId INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	pais VARCHAR(100) NOT NULL,
+	ciudad VARCHAR(100) NOT NULL,
+	vuelo VARCHAR (8) NOT null
+);
+
+CREATE TABLE aerolineas (
+	aerolineasId INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	aerolinea VARCHAR(50) NOT NULL
+);
+
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo) /*Partiendo desde El Salvador*/
+VALUES (DEFAULT, 'USA', 'Los Angeles', '5:30:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo) /*Partiendo desde El Salvador*/
+VALUES (DEFAULT, 'Peru', 'Lima', '4:15:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Mexico', 'Ciudad de Mexico', '2:25:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Espania', 'Madrid', '10:20:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Argentina', 'Buenos Aires', '10:15:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Colombia', 'Cartagena', '6:27:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Ecuador', 'Quito', '2:55:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Mexico', 'Cancun', '1:45:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'USA', 'Orlando Florida', '3:00:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'United Kingdom', 'Londres', '13:00:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Francia', 'Calais', '13:35:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Francia', 'Marsella', '13:55:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Francia', 'Paris', '13:35:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Republica de Irlanda', 'Dublin', '14:24:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'USA', 'Austin', '5:55:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'USA', 'Washington D.C.', '4:15:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Canada', 'Toronto', '4:50:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Alemania', 'Berlin', '15:50:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Alemania', 'Munich', '14:50:00');
+INSERT INTO destinos (destinosId, pais, ciudad, vuelo)
+VALUES (DEFAULT, 'Austria', 'Viena', '14:50:00');
+
+INSERT INTO aerolineas (aerolineasId, aerolinea)
+VALUES (DEFAULT, 'American Airlines');
+INSERT INTO aerolineas (aerolineasId, aerolinea)
+VALUES (DEFAULT, 'Avianca');
+INSERT INTO aerolineas (aerolineasId, aerolinea)
+VALUES (DEFAULT, 'Emirates');
+INSERT INTO aerolineas (aerolineasId, aerolinea)
+VALUES (DEFAULT, 'United Airlines');
+INSERT INTO aerolineas (aerolineasId, aerolinea)
+VALUES (DEFAULT, 'Luthansa');
+
+INSERT INTO areonave (idAreonave, Modelo, Capacidad_pasajeros, Rango_combustible_lleno, Aerolinea, vuelo, categoria)
+VALUES (DEFAULT, 'Dassault Falcon 100', 10, 1000, 'Dassault', '3:00:00', 'Super Light');
+INSERT INTO areonave (idAreonave, Modelo, Capacidad_pasajeros, Rango_combustible_lleno, Aerolinea, vuelo, categoria)
+VALUES (DEFAULT, 'Beechcraft Premier I / I A', 30, 1500, 'Beechcraft', '5:00:00', 'Light');
+INSERT INTO areonave (idAreonave, Modelo, Capacidad_pasajeros, Rango_combustible_lleno, Aerolinea, vuelo, categoria)
+VALUES (DEFAULT, 'Boeing 797 NMA', 250, 2800, 'Boeing', '7:45:00', 'Midsize');
+INSERT INTO areonave (idAreonave, Modelo, Capacidad_pasajeros, Rango_combustible_lleno,Aerolinea, vuelo, categoria)
+VALUES (DEFAULT, 'Airbus A320', 450, 3500, 'Airbus', '9:00:00', 'Super Midsize');
+INSERT INTO areonave (idAreonave, Modelo, Capacidad_pasajeros, Rango_combustible_lleno,Aerolinea, vuelo, categoria)
+VALUES (DEFAULT, 'Airbus A380', 615, 8000, 'Airbus', '16:00:00', 'Heavy');
