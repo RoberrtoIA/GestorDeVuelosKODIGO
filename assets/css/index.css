@@ -42,7 +42,7 @@
 }
 
 #opcion1:hover {
-  background-color: rgb(201, 247, 38);
+  background-color: rgba(201, 247, 38, 0.8);
   transition: background 0.5s ease-in-out;
   color: aliceblue !important;
   text-shadow: 1px 0 black;
@@ -61,7 +61,7 @@
 }
 
 #opcion2:hover {
-  background-color: rgb(250, 192, 85);
+  background-color: rgba(247, 178, 49, 0.8);
   transition: background 0.5s ease-in-out;
   color: aliceblue;
   text-shadow: 1px 0 black;
@@ -80,7 +80,7 @@
 }
 
 #opcion3:hover {
-  background-color: rgb(247, 52, 38);
+  background-color: rgba(247, 52, 38, 0.8);
   transition: background 0.5s ease-in-out;
   color: aliceblue;
   text-shadow: 1px 0 black;
@@ -99,7 +99,7 @@
 }
 
 #opcion4:hover {
-  background-color: rgb(248, 54, 151);
+  background-color: rgba(248, 54, 151, 0.8);
   transition: background 0.5s ease-in-out;
   color: aliceblue;
   text-shadow: 1px 0 black;
@@ -122,7 +122,7 @@
 }
 
 #opcion5:hover {
-  background-color: rgb(255, 104, 3);
+  background-color: rgba(255, 104, 3, 0.8);
   transition: background 0.5s ease-in-out;
   color: aliceblue;
   text-shadow: 1px 0 black;
@@ -141,7 +141,7 @@
 }
 
 #opcion6:hover {
-  background-color: rgb(38, 247, 230);
+  background-color: rgba(38, 247, 230, 0.8);
   transition: background 0.5s ease-in-out;
   color: aliceblue;
   text-shadow: 1px 0 black;
