@@ -2,6 +2,26 @@ document.getElementById("opcion1").onclick = function () {
   location.href = "Vista/AgendarVueloBundle/destinos.php";
 };
 
+document.getElementById("opcion2").onclick = function () {
+  location.href = "Vista/ActualizarVueloBundle/vuelos.php";
+};
+
+document.getElementById("opcion3").onclick = function () {
+  location.href = "Vista/CancelarVueloBundle/cancelar.php";
+};
+
+document.getElementById("opcion4").onclick = function () {
+  location.href = "Vista/CatalogoBundle/catalogo.php";
+};
+
+document.getElementById("opcion5").onclick = function () {
+  location.href = "Vista/ListaDeVuelosBundle/lista_vuelos.php";
+};
+
+document.getElementById("opcion6").onclick = function () {
+  location.href = "Vista/VueloPorDiaBundle/vuelo_dia.php";
+};
+
 function play() {
   var audio = document.getElementById("audio");
   audio.play();
