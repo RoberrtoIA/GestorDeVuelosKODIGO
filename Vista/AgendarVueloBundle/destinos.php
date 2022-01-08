@@ -19,7 +19,7 @@
     <div class="container menu">
         <center><h1 id="titulo">Seleccionar Destino!</h1></center>
         <div class="contenido">
-        <table class="table table-hover">
+        <table class="table table-hover noselect">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -55,7 +55,9 @@
         </table>
         </div>
     </div>
-
+    <div class="container salir">
+    <a href="../../index.html"><button type="button" class="btn btn1 btn-outline-light">Menú</button></a>
+    </div>
     <?php
     // var_dump($_GET['destino']);
     // echo print_r($_GET['destino'], true);

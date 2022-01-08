@@ -9,6 +9,7 @@ table {
 html {
     overflow: scroll;
     overflow-y: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
@@ -24,6 +25,7 @@ html {
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 1;
+    /* height: 100%; */
   }
 
   .menu {
@@ -38,6 +40,21 @@ html {
     z-index: 2;
     font-family: 'Source Sans Pro', sans-serif;
     width: 90vh;
+  }
+
+  .salir {
+    position: fixed;
+    top: 80%;
+    left: 20%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    /* opacity: 0.5; */
+    background-color: rgba(240, 248, 255, 0.0);
+    border-radius: 50px 50px 50px 50px;
+    z-index: 1;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 20vh;
+    
   }
 
   .contenido {
@@ -67,4 +84,27 @@ html {
 
   .numero {
       width: 3vh;
+  }
+
+  .btn1 {
+    border-radius: 30px 30px 30px 30px;
+    width: 100%;
+    opacity: 0.7;
+    font-size: 200%;
+  }
+
+  .noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
   }
