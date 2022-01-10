@@ -10,29 +10,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/agendarVuelo.css">
     <link rel="shortcut icon" href="../../assets/img/ico/viaje.png">
-    <link href="../../assets/css/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link href="../../assets/css/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <!--load all styles -->
 
     <title>Seleccionar Destino</title>
 </head>
 
 <body class="fondo">
     <div class="container menu">
-        <center><h1 id="titulo">Seleccionar Destino!</h1></center>
+        <center>
+            <h1 id="titulo">Seleccionar Destino!</h1>
+        </center>
         <div class="contenido">
-        <table class="table table-hover noselect">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th class="ciudad" scope="col">Ciudad</th>
-                    <th class="vuelo" scope="col">Vuelo</th>
-                </tr>
-            </thead>
-            <form action="#" method="get">
-            <tbody>
-                <?php
-                require_once('../../Controlador/destinos_controlador.php');
-                ?>
-                <!-- <tr>
+            <table class="table table-hover noselect">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th class="ciudad" scope="col">Ciudad</th>
+                        <th class="vuelo" scope="col">Vuelo</th>
+                    </tr>
+                </thead>
+                <form action="#" method="get">
+                    <tbody>
+                        <?php
+                        require_once('../../Controlador/destinos_controlador.php');
+                        ?>
+                        <!-- <tr>
                     <th class="numero" scope="row">1</th>
                     <td class="ciudad">Mark</td>
                     <td class="vuelo">Otto</td>
@@ -50,13 +53,14 @@
                     <td class="vuelo">Otto</td>
                     <td class="boton"><button type="button" class="btn btn-outline-light"><i class="fas fa-calendar-check"></i></button></td>
                 </tr> -->
-            </tbody>
-            </form>
-        </table>
+                    </tbody>
+                </form>
+            </table>
         </div>
+
     </div>
     <div class="container salir">
-    <a href="../../index.html"><button type="button" class="btn btn1 btn-outline-light">Menú</button></a>
+        <a href="../../index.html"><button type="button" class="btn btn1 btn-outline-light">Menú</button></a>
     </div>
     <?php
     // var_dump($_GET['destino']);
