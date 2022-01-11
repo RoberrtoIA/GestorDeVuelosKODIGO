@@ -30,7 +30,7 @@
                         <th class="vuelo" scope="col">Vuelo</th>
                     </tr>
                 </thead>
-                <form action="#" method="get">
+                <form action="areonave.php" method="post">
                     <tbody>
                         <?php
                         require_once('../../Controlador/destinos_controlador.php');

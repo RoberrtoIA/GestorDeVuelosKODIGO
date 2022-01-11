@@ -11,14 +11,16 @@ CREATE TABLE IF NOT EXISTS `areonave` (
 
 CREATE TABLE IF NOT EXISTS `vuelos` (
   `idVuelos` int(11) NOT NULL AUTO_INCREMENT,
+  NumeroVuelo INT(8),
   `PaisCiudad_origen` varchar(250) DEFAULT NULL,
   `PaisCiudad_destino` varchar(250) DEFAULT NULL,
   `FechaHora_salida` datetime DEFAULT NULL,
   `FechaHora_llegada` datetime DEFAULT NULL,
-  `Tiempo_retraso` datetime DEFAULT NULL,
+  `Tiempo_retraso` VARCHAR(8) NOT NULL,
+  Retraso VARCHAR(200),
   `Areonave_idAreonave` int(11) NOT NULL,
   PRIMARY KEY (`idVuelos`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=LATIN1;
 
 CREATE TABLE destinos (
 	destinosId INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -94,3 +96,10 @@ INSERT INTO areonave (idAreonave, Modelo, Capacidad_pasajeros, Rango_combustible
 VALUES (DEFAULT, 'Airbus A320', 450, 3500, 'Airbus', '9:00:00', 'Super Midsize');
 INSERT INTO areonave (idAreonave, Modelo, Capacidad_pasajeros, Rango_combustible_lleno,Aerolinea, vuelo, categoria)
 VALUES (DEFAULT, 'Airbus A380', 615, 8000, 'Airbus', '16:00:00', 'Heavy');
+
+CREATE TRIGGER asignarNumeroVuelo BEFORE INSERT ON vuelos
+FOR EACH
+ROW SET NEW.NumeroVuelo = FLOOR( RAND() * (200-100) + 100);
+
+INSERT INTO vuelos (idVuelos, PaisCiudad_origen, PaisCiudad_destino, FechaHora_salida, FechaHora_llegada, Tiempo_retraso, Areonave_idAreonave)
+VALUES (DEFAULT, 'El Salvador', 'Los Angeles', '2022-01-20 10:00:00', '2022-01-20 13:30:00', '00:00:00', 8);
