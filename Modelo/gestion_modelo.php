@@ -29,6 +29,15 @@ class Gestion_Modelo
         return $this->registro;
     }
 
+    public function get_catalogo()
+    {
+        $consulta = $this->db->query('SELECT * FROM aerolineas');
+        while ($filas = $consulta->fetch(PDO::FETCH_ASSOC)) {
+            $this->registro[] = $filas;
+        }
+        return $this->registro;
+    }
+
     public function get_destino_elegido()
     {
         $array = array();
