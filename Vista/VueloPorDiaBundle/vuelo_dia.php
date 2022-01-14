@@ -42,6 +42,8 @@
                                 }
                                 // Aqui hacemos lo del clima <<<-----------==============================================
                                 echo $array_clima[0];
+                                session_start();
+                                $_SESSION['id'] = $array_clima[0];
                             }
 
                             ?>
@@ -49,6 +51,7 @@
                     </div>
                 </div>
             </div>
+            <form action="../../Controlador/cancelar_vuelos_controlador.php" method="post">
             <div class="row">
                 <div class="col-3 offset-1">
                     <div class="input-group mb-3">
@@ -59,13 +62,14 @@
                 <div class="col-6">
                     <div class=" input-group mb-3">
                         <span class="input-group-text noselect" id="inputGroup-sizing-default">Razon:</span>
-                        <textarea name="razon" class="form-control" id="message-text" required></textarea>
+                        <textarea name="razon" class="form-control" id="message-text" required disabled><?php require_once '../../Controlador/obtener_clima_controlador.php'; ?></textarea>
                     </div>
                 </div>
                 <div class="col-1">
-                    <button type="submit" class="btn btn-outline-light submit">Agendar</button>
+                    <button type="submit" class="btn btn-outline-light submit">Cancelar</button>
                 </div>
             </div>
+            </form>
             <table class="table table-hover noselect" id="myTable">
                 <thead>
                     <tr>
@@ -76,7 +80,7 @@
                         <th class="vuelo" scope="col">Destino</th>
                         <th class="vuelo" scope="col">Vuelo</th>
                         <th class="vuelo" scope="col">Dia de Salida</th>
-                        <th class="vuelo" scope="col">Razon</th>
+                        <th class="vuelo2" scope="col">Razon</th>
                         <th class="vuelo" scope="col">Tiempo de Retraso</th>
                         <th class="vuelo" scope="col">Estado</th>
                         <th class="vuelo" scope="col">Aerolinea</th>

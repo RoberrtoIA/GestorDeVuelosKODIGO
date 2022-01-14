@@ -82,6 +82,11 @@ html {
       text-align: center;
   }
 
+  .vuelo2 {
+    width: 250vh;
+    text-align: center;
+  }
+
   .numero {
       width: 3vh;
   }
