@@ -27,6 +27,10 @@
                     <tr>
                         <th scope="col">#</th>
                         <th class="ciudad" scope="col">Aerolinea</th>
+                        <th class="vuelo" scope="col">Modelo</th>
+                        <th class="vuelo" scope="col">Capacidad</th>
+                        <th class="vuelo" scope="col">Millas Nauticas</th>
+                        <th class="vuelo" scope="col">Vuelos Agendados</th>
                     </tr>
                 </thead>
                 <form action="areonave.php" method="post">

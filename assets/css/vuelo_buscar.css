@@ -2,7 +2,7 @@
 
 table {
     display: block;
-    height: 60vh;
+    height: 45vh;
     overflow: auto;
 }
 
@@ -108,4 +108,25 @@ html {
     user-select: none;
     /* Non-prefixed version, currently
     supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  .submit {
+    width: 200%;
+    background-color: rgba(240, 248, 255, 0.5);
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  .clima {
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.5);
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  .id {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .centrar {
+    text-align: center;
   }

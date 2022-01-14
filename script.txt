@@ -103,3 +103,42 @@ ROW SET NEW.NumeroVuelo = FLOOR( RAND() * (200-100) + 100);
 
 INSERT INTO vuelos (idVuelos, PaisCiudad_origen, PaisCiudad_destino, FechaHora_salida, FechaHora_llegada, Tiempo_retraso, Areonave_idAreonave)
 VALUES (DEFAULT, 'El Salvador', 'Los Angeles', '2022-01-20 10:00:00', '2022-01-20 13:30:00', '00:00:00', 8);
+
+UPDATE areonave
+SET Aerolinea = 'Lufthansa'
+WHERE idAreonave = 8;
+
+UPDATE areonave
+SET Aerolinea = 'United Airlines'
+WHERE idAreonave = 7;
+
+UPDATE areonave
+SET Aerolinea = 'Emirates'
+WHERE idAreonave = 6;
+
+UPDATE areonave
+SET Aerolinea = 'Avianca'
+WHERE idAreonave = 5;
+
+UPDATE areonave
+SET Aerolinea = 'American Airlines'
+WHERE idAreonave = 4;
+
+ALTER TABLE vuelos
+ADD COLUMN estado VARCHAR(30);
+
+UPDATE vuelos
+SET estado = 'Agendado'
+
+CREATE TRIGGER asignarEstado BEFORE INSERT ON vuelos
+FOR EACH
+ROW SET NEW.estado = 'Agendado';
+
+DROP TRIGGER asignarNumeroVuelo; 
+
+ALTER TABLE vuelos Modify column NumeroVuelo VARCHAR(20);  
+
+CREATE TRIGGER asignarNumeroVuelo BEFORE INSERT ON vuelos
+FOR EACH
+ROW SET NEW.NumeroVuelo = CONCAT(FLOOR( RAND() * (999-100) + 100), '-', FLOOR( RAND() * (999-100) + 100), '-', FLOOR( RAND() * (999-100) + 100));
+

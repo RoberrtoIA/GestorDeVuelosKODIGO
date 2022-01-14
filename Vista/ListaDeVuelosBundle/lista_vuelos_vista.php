@@ -10,9 +10,11 @@ foreach ($matrizVuelos as $vuelos) {
     echo '<td class="vuelo">' . $vuelos["PaisCiudad_destino"] . '</td>';
     echo '<td class="vuelo">' . $vuelos["FechaHora_salida"] . '</td>';
     echo '<td class="vuelo">' . $vuelos["FechaHora_llegada"] . '</td>';
+    echo '<td class="vuelo">' . $vuelos["Vuelo"] . '</td>';
     echo '<td class="vuelo">' . $vuelos["Tiempo_retraso"] . '</td>';
     echo '<td class="vuelo">' . $vuelos["Retraso"] . '</td>';
     echo '<td class="vuelo">' . $vuelos["Modelo"] . '</td>';
+    echo '<td class="vuelo">' . $vuelos["Aerolinea"] . '</td>';
     echo "\t\t\t\t" . '</tr>' . "\n";
 }
 ?>

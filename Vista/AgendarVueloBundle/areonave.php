@@ -82,7 +82,7 @@
                 <div class="col-2">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-default">Hora</span>
-                        <input type="number" class="form-control" name="hora" aria-label="Sizing example input" id="datePickerId" aria-describedby="inputGroup-sizing-default" min="0" max="23" value="0" required>
+                        <input type="number" class="form-control" name="hora" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" min="0" max="23" value="0">
                     </div>
                 </div>
                 <div class="col-1">

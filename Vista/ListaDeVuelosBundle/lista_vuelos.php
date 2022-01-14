@@ -31,9 +31,11 @@
                         <th class="vuelo" scope="col">Destino</th>
                         <th class="vuelo" scope="col">Fecha de Salida</th>
                         <th class="vuelo" scope="col">Fecha de Llegada</th>
+                        <th class="vuelo" scope="col">Vuelo</th>
                         <th class="vuelo" scope="col">Tiempo de Retraso</th>
                         <th class="vuelo" scope="col">Razon</th>
                         <th class="vuelo" scope="col">Areonave</th>
+                        <th class="vuelo" scope="col">Areolinea</th>
                     </tr>
                 </thead>
                 <form action="areonave.php" method="post">

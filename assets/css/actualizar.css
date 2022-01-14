@@ -109,3 +109,15 @@ html {
     /* Non-prefixed version, currently
     supported by Chrome, Edge, Opera and Firefox */
   }
+
+  input[type="text"] {
+    background-color: rgba(240, 248, 255, 0.5);
+  }
+
+  /* input[type="number"] {
+    background-color: rgba(240, 248, 255, 0.5);
+  } */
+
+  textarea {
+    background-color: rgba(240, 248, 255, 0.5);
+  }

@@ -3,11 +3,11 @@ document.getElementById("opcion1").onclick = function () {
 };
 
 document.getElementById("opcion2").onclick = function () {
-  location.href = "Vista/ActualizarVueloBundle/vuelos.php";
+  location.href = "Vista/ActualizarVueloBundle/actualizar.php";
 };
 
 document.getElementById("opcion3").onclick = function () {
-  location.href = "Vista/CancelarVueloBundle/cancelar.php";
+  location.href = "Vista/ReporteVueloBundle/reporte.php";
 };
 
 document.getElementById("opcion4").onclick = function () {

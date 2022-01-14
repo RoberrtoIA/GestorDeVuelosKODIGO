@@ -35,24 +35,6 @@
                         <?php
                         require_once('../../Controlador/destinos_controlador.php');
                         ?>
-                        <!-- <tr>
-                    <th class="numero" scope="row">1</th>
-                    <td class="ciudad">Mark</td>
-                    <td class="vuelo">Otto</td>
-                    <td class="boton"><button type="button" class="btn btn-outline-light"><i class="fas fa-calendar-check"></i></button></td>
-                </tr>
-                <tr>
-                <th class="numero" scope="row">1</th>
-                    <td class="ciudad">Mark</td>
-                    <td class="vuelo">Otto</td>
-                    <td class="boton"><button type="button" class="btn btn-outline-light"><i class="fas fa-calendar-check"></i></button></td>
-                </tr>
-                <tr>
-                <th class="numero" scope="row">1</th>
-                    <td class="ciudad">Mark</td>
-                    <td class="vuelo">Otto</td>
-                    <td class="boton"><button type="button" class="btn btn-outline-light"><i class="fas fa-calendar-check"></i></button></td>
-                </tr> -->
                     </tbody>
                 </form>
             </table>
@@ -62,13 +44,6 @@
     <div class="container salir">
         <a href="../../index.html"><button type="button" class="btn btn1 btn-outline-light">Menú</button></a>
     </div>
-    <?php
-    // var_dump($_GET['destino']);
-    // echo print_r($_GET['destino'], true);
-    // foreach ($_GET['destino'] as $key => $value) {
-    //     echo $key. ' '. $value;
-    // }
-    ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
