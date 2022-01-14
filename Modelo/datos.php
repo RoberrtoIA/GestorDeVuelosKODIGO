@@ -1,6 +1,6 @@
 <?php
 define('SERVER', 'localhost');
-define('DBNAME', 'airport');
+define('DBNAME', 'vuelos');
 define('USER', 'root');
-define('PASSWORD', '');
+define('PASSWORD', 'Diabolik11');
 ?>
